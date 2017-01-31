@@ -133,10 +133,9 @@ $(function() {
             });
         })
 
-        it('loadFeed results in content change', function(done) {
+        it('loadFeed results in content change', function() {
             // check that the html of the initial and new elems with class feed were different.
             expect(initialFeed).not.toEqual(newFeed);
-            done();
         });
     });
 }());
