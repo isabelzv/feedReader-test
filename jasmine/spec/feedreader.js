@@ -96,17 +96,14 @@ $(function() {
         // of before each function.
         beforeEach(function(done) {
             // call loadFeed with allFeeds[0]
-            loadFeed(0, function() {
-                // call done so that function knows to move on to test.
-                done();
-            })
+            // no callback, so anonymous function can be omitted.
+            loadFeed(0, done);
         })
 
-        it('loadFeed results in at least 1 .entry elem within the .feed container', function(done){
+        it('loadFeed results in at least 1 .entry elem within the .feed container', function(){
             // use jQuery to grab array of elems with class entry within elem of class feed.
             // get length and check it's not 0.
-            expect($('.feed .entry').length).not.toBe(0);
-            done();
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
 
