@@ -7,8 +7,8 @@ The task was to create a series of test suites that would provide end-to-end tes
 ## Getting started
 
 * Download or clone all the files from the GitHub repository.
-* Open feedreader.js in the browser - this will show you the webpage and the jasmine test results below.
-
+* In terminal navigate to repo directory and run "python -m SimpleHTTPServer 8000".
+* Open browser and navigate to "http://localhost:8000" - this will show you the webpage and the jasmine test results below.
 
 
 
